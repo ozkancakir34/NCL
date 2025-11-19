@@ -87,7 +87,7 @@
     const GVIZ_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:json`;
     const GVIZ_NOTICE_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?sheet=Sayfa2&tqx=out:json`;
     const state = { rows: [], filter: "__ALL__", search: "", lastHash: "" };
-    const themePref = localStorage.getItem("theme") || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+    const themePref = localStorage.getItem("theme") || 'jesc';
     document.documentElement.setAttribute('data-theme', themePref);
 
     function parseGviz(text) {
